@@ -1,17 +1,1 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.header{
-    padding: 20px;
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-}
-.menu{
-   
-}
 
-.item-menu{
-    padding-left: 90px;
-}
