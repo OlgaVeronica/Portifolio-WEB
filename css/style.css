@@ -97,6 +97,7 @@ img{
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .sobre-mim-texto{
@@ -119,6 +120,22 @@ img{
 .sobre-mim-img{
     flex: 1 1 160px;
     margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.sobre-mim-img-item{
+    flex: 1 1 175px;
+    margin:10px;
+    border-top: 8px solid #5b9f59;
+}
+
+.sobre-mim-img-item h2{
+    font-size: 3em;
+    color:#a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .sobre-mim-img img{
@@ -132,6 +149,7 @@ img{
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .feitos-meu-texto{
     flex: 2 1 300px;
@@ -154,4 +172,87 @@ img{
     flex: 1 1 160px;
     margin: 0 10px;
 }
+
+.ferramentas-container{
+    border-bottom:2px solid #2c70ff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.ferramentas-texto{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222222;
+}
+
+.ferramentas-texto p {
+    /* display: block; */
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+.ferramentas-item{
+    flex: 1 1 175px;
+    margin:10px;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ferramentas-item img{
+    max-width: 350px;
+    /* border-top: 8px solid #0074be; */
+}
+
+.ferramentas-item h2{
+    font-size: 3em;
+    color:#222222;
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.ferramentas-item-descricao{
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+
+}
+.css{
+    border-top: 8px solid #0074be;
+    max-width: 450px;
+    background: #f7f7f7;
+}
+
+
+
+.html{
+    border-top: 8px solid #ff5722;
+    max-width: 350px;
+    background: #f7f7f7;
+}
+
+.csharp{
+    border-top: 8px solid #6a1577;
+    max-width: 350px;
+    background: #f7f7f7;
+}
+
+.js{
+    border-top: 8px solid #f8dc3e;
+    max-width: 350px;
+    background: #f7f7f7;
+}
+
+
+
+
 
