@@ -160,10 +160,10 @@ img{
 }
 
 .feitos-meu{
-    border-bottom:2px solid #732C26;
+    border-bottom:2px solid #8229A3;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -195,10 +195,10 @@ img{
 }
 
 .ferramentas-container{
-    border-bottom:2px solid #2c70ff;
+    border-bottom:2px solid #8229A3;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -256,7 +256,7 @@ img{
     background: #ff5722;
 }
 .css h2::before{
-    background: #0074be;
+    background: #264de4;
 }
 .js h2::before{
     background: #f8dc3e;
@@ -286,3 +286,45 @@ img{
 .ferramenta-item-img{
     max-width: 170px;
 }
+
+.projeto-container{
+    border-bottom:2px solid #8229A3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.projeto-texto{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #232323;
+    font-family: 'Comfortaa', cursive;
+}
+
+.hobbies-container{
+    border-bottom:2px solid #8229A3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hobbies-texto{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #232323;
+    font-family: 'Comfortaa', cursive;
+}
+
+
