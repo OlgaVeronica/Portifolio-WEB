@@ -222,30 +222,33 @@ img{
 
 .ferramenta{
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 100px 200px;
 }
 
 .ferramenta-item{
     flex: 1 1 300px;
-    margin: 20px 10px;
+    margin: 0px 10px;
 }
 
 .ferramenta-item h2{
     font-size: 3em;
     color: #232323;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Comfortaa', cursive;
+    display: flex;
+    align-items: center;
 }
 
 .ferramenta-item h2::before{
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 45px;
+    width: 10px;
+    height: 10px;
     margin-right: 10px;
+    border-radius: 50%;
     background: blue;
 }
 
@@ -275,7 +278,11 @@ img{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.ferramenta-item-disposition{
+    display: flex;
+    width: 500px;
+}
 
-
-
-
+.ferramenta-item-img{
+    max-width: 170px;
+}
