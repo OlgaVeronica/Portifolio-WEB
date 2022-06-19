@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 body, h1, h2, p, ul, li, a{
     margin: 0;
@@ -6,8 +8,7 @@ body, h1, h2, p, ul, li, a{
 }
 
 body{
-    /* font-family: 'Nunito', Arial, Helvetica, sans-serif; */
-    color: #222222;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 ul{
@@ -27,17 +28,22 @@ img{
     box-sizing: border-box;
 }
 
+.bg-ini{
+    background:linear-gradient(to top, #2248C9 10%, #99229b); 
+}
+
 .menu-bg{
-    background: #2c70ff;
+    /* background: ; */
+    border-bottom: 2px solid #D9C1BF;
 }
 
 .menu{
-    max-width: 1200px;
+    max-width: 920px;
     margin: 0 auto;
-    /* padding: 15px 0; */
+    padding: 3.9em 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -48,24 +54,31 @@ img{
 .menu-logo a{
     font-size: 2.40em;
     font-weight: bold;
-    margin: 0 10px;
     font-family: 'Comfortaa', cursive;
 }
 
-.menu-nav ul{
+.menu-nav{
     display: flex;
-    flex-wrap: wrap;
-    /* gap: 50px; */
+    gap: 6em;
+    padding-top: 60px;
 }
 
-.menu-nav a{
-    font-size: 22px;
-    display: block;
-    padding: 30px ;
+.menu-nav-item a{
+    max-width: 70px;
+   
 }
 
-.menu-nav a:hover{
-    color: #122ab2;
+.menu-nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu-nav-item a img{
+    width: 100%;
+    min-height: 70px;
 }
 
 .introducao{
@@ -74,48 +87,69 @@ img{
     line-height: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 10px;
     align-items: center;
     font-family: 'Comfortaa', cursive;
+    color: #f3e9e9;
 }
 
 .introducao::before{
     content: '';
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     margin-right: 10px;
-    background: blue;
+    background: #8EC94B;
+    border-radius: 50%;
+}
+
+.introducao::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background: #8EC94B;
     border-radius: 50%;
 }
 
 .sobre-mim{
-    border-top:2px solid #2c70ff;
-    border-bottom:2px solid #2c70ff;
+    /* border-bottom:2px solid #732C26; */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .sobre-mim-texto{
     flex: 2 1 300px;
     margin: 0 10px;
-    padding-bottom: 90px;
+    padding: 78px 0;
 }
 
 .sobre-mim-texto h1{
+    display: flex;
     font-size: 3em;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
+    color: #f3e9e9;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+}
+
+.sobre-mim-texto h1::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background: #8EC94B;
+    border-radius: 50%;
 }
 
 .sobre-mim-texto p{
     font-size: 2em;
     line-height: 1.4;
-    margin-bottom: 1em;
-    color: #7c7c7c;
+    color: #D9C1BF;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .sobre-mim-img{
     flex: 1 1 160px;
@@ -124,26 +158,9 @@ img{
     flex-wrap: wrap;
     align-items: flex-end;
 }
-.sobre-mim-img-item{
-    flex: 1 1 175px;
-    margin:10px;
-    border-top: 8px solid #5b9f59;
-}
-
-.sobre-mim-img-item h2{
-    font-size: 3em;
-    color:#a4a4a4;
-    background: #f7f7f7;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.sobre-mim-img img{
-    /* border-radius: 50%; */
-}
 
 .feitos-meu{
-    border-bottom:2px solid #2c70ff;
+    border-bottom:2px solid #732C26;
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 0;
@@ -159,13 +176,17 @@ img{
 .feitos-meu-texto h1{
     font-size: 3em;
     margin-bottom: 120px;
+    font-family: 'Comfortaa', cursive;
+    text-align: right;
 }
 
 .feitos-meu-texto p{
     font-size: 2em;
     line-height: 1.4;
     margin-bottom: 1em;
-    color: #7c7c7c;
+    color: #232323;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
 }
 
 .feitos-meu-img{
@@ -188,72 +209,18 @@ img{
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
-    color: #222222;
+    color: #232323;
+    font-family: 'Comfortaa', cursive;
 }
 
 .ferramentas-texto p {
     /* display: block; */
     padding-top: 20px;
     padding-bottom: 90px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.ferramentas-item{
-    display: flex;
-    flex: 1 1 175px;
-    margin:10px;
-    /* display: flex; */
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.ferramentas-item img{
-    max-width: 300px;
-    /* border-top: 8px solid #0074be; */
-}
-
-.ferramentas-item h2{
-    font-size: 3em;
-    color:#222222;
-    /* background: #f7f7f7; */
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.ferramentas-item-descricao{
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    line-height: 1.4;
-    margin-bottom: 1em;
-    color: #7c7c7c;
-
-}
-.css{
-    /* border-top: 8px solid #0074be; */
-    max-width: 450px;
-    /* background: #f7f7f7; */
-}
-
-
-
-.html{
-    /* border-top: 8px solid #ff5722; */
-    max-width: 350px;
-    /* background: #f7f7f7; */
-}
-
-.csharp{
-    /* border-top: 8px solid #6a1577; */
-    max-width: 350px;
-    /* background: #f7f7f7; */
-}
-
-.js{
-    /* border-top: 8px solid #f8dc3e; */
-    max-width: 350px;
-    /* background: #f7f7f7; */
-}
-
-.qualidade{
+.ferramenta{
     max-width: 1200px;
     margin: 60px auto;
     display: flex;
@@ -261,19 +228,19 @@ img{
     gap: 100px;
 }
 
-.qualidade-item{
+.ferramenta-item{
     flex: 1 1 300px;
     margin: 20px 10px;
-    border: 1px solid;
 }
 
-.qualidade-item h2{
+.ferramenta-item h2{
     font-size: 3em;
-    color: #222222;
+    color: #232323;
     margin-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
 }
 
-.qualidade-item h2::before{
+.ferramenta-item h2::before{
     content: '';
     display: inline-block;
     width: 8px;
@@ -301,10 +268,11 @@ img{
     background: #669AD1;
 }
 
-.qualidade-item p{  
+.ferramenta-item p{  
     font-size: 1.8em;
     line-height: 1.4;
-    color: #222222;
+    color: #232323;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
