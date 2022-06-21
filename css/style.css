@@ -31,6 +31,7 @@ img{
 .bg-ini{
     background:linear-gradient(to top, #2248C9 10%, #99229b); 
     min-height: 100vh;
+    position: relative;
 }
 
 .menu-bg{
@@ -78,10 +79,6 @@ img{
     transition: .2s;
 }
 
-.menu-nav-item a img{
-    width: 100%;
-    min-height: 70px;
-}
 
 .menu-nav-item a:hover{
     transform: scale(1.1);
@@ -120,10 +117,25 @@ img{
 
 .sobre-mim{
     /* border-bottom:2px solid #732C26; */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+.sobre-mim-flex{
     max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
+
+    bottom: 0;
+
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-end;
+    margin: 0 auto;
+}
+
+.sobre-mim-img-item{
+    align-self: flex-end;
 }
 
 .sobre-mim-texto{
@@ -164,6 +176,11 @@ img{
     flex-wrap: wrap;
     align-items: flex-end;
     max-width: 450px;
+}
+
+.sobre-mim-img {
+
+
 }
 
 .feitos-meu{
@@ -370,29 +387,66 @@ img{
 }
 
 .hobbies-descricao{
-    background-image: url(../image/arduino.jpg);
+    margin-top: 80px;    
+
     min-height: 50vh;
     background-size: cover;
     display: flex;
-    align-items: stretch;
+    align-items: center;
+}
+
+.hobbies-descricao:nth-child(2){
+    background-image: url(../image/library.jpg);
+}
+
+.hobbies-descricao:nth-child(3){
+    background-image: url(../image/game.webp);
+}
+
+.hobbies-descricao:nth-child(4){
+    background-image: url(../image/cachorro.jpg);
+}
+
+.hobbies-descricao:nth-child(5){
+    background-image: url(../image/violao.jpg);
 }
 
 .hobbies-descricao-titulo{
     display: flex;
     font-family: 'Comfortaa', cursive;
-    background: #2248C9;
+    /* background:linear-gradient(to right, #2248C9, #99229bdf 70%, transparent);      */
     min-width: 50%;
+    align-self: stretch;
     align-items: center;
     justify-content: center;
     font-size: 2.8em;
+    color: white;
+}
+
+.ler{
+    background:linear-gradient(to right, #2248C9, #99229bdf 70%, transparent);     
+}
+
+
+.jogar{
+    background:linear-gradient(to left, #2248C9, #99229bdf 70%, transparent);     
+}
+
+.hobbies-descricao-texto{
+    margin: 0 80px;
+    align-items: stretch;
+    background: rgba(225, 224, 224, 0.828);
+    
 }
 
 .hobbies-descricao-texto-center{
-    margin: 80px;
+    min-height: 300px;
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.55em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 10px solid whitesmoke;
+
 }
 
 .rodape-bg{
