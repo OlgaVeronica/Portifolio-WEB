@@ -218,6 +218,7 @@ img{
     padding-top: 20px;
     padding-bottom: 90px;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
 }
 
 .ferramenta{
@@ -288,13 +289,14 @@ img{
 }
 
 .projeto-container{
+    flex-direction: column;
     border-bottom:2px solid #8229A3;
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .projeto-texto{
@@ -305,6 +307,44 @@ img{
     text-align: center;
     color: #232323;
     font-family: 'Comfortaa', cursive;
+}
+
+.projeto-texto p{
+    padding-top: 20px;
+    padding-bottom: 90px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+}
+.projeto-item-descricao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.projeto-item-img{
+    width: 600px;
+    cursor: pointer;
+}
+
+.projeto-item-img-desc{
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #232323;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-align: right; */
+}
+
+.projeto-item-img img{
+    max-width: 100%;
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    transition: 1s;
+}
+
+.projeto-item-img img:hover{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .hobbies-container{
