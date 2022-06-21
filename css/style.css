@@ -75,11 +75,16 @@ img{
     align-items: center;
     line-height: 2;
     font-family: 'Comfortaa', cursive;
+    transition: .2s;
 }
 
 .menu-nav-item a img{
     width: 100%;
     min-height: 70px;
+}
+
+.menu-nav-item a:hover{
+    transform: scale(1.1);
 }
 
 .introducao{
@@ -99,7 +104,7 @@ img{
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    background: #8EC94B;
+    background: white;
     border-radius: 50%;
 }
 
@@ -109,7 +114,7 @@ img{
     width: 10px;
     height: 10px;
     margin-left: 10px;
-    background: #8EC94B;
+    background: white;
     border-radius: 50%;
 }
 
@@ -142,7 +147,7 @@ img{
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    background: #8EC94B;
+    background: white;
     border-radius: 50%;
 }
 
@@ -307,9 +312,6 @@ img{
     font-family: 'Comfortaa', cursive;
     
 }
-.projeto-item{
-    
-}
 
 .projeto-texto p{
     padding-top: 20px;
@@ -366,6 +368,39 @@ img{
     color: #232323;
     font-family: 'Comfortaa', cursive;
 }
+
+.hobbies-descricao{
+    background-image: url(../image/arduino.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+}
+
+.hobbies-descricao-titulo{
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    background: #2248C9;
+    min-width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8em;
+}
+
+.hobbies-descricao-texto-center{
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid whitesmoke;
+}
+
+.rodape-bg{
+    background:linear-gradient(to top, #2248C9 10%, #99229b);
+    min-height: 40vh; 
+    overflow: hidden;
+}
+
 .rodape-contato{
     /* padding: 60px calc((100% - 960px) / 2); */
     display: flex;
@@ -374,6 +409,28 @@ img{
     padding-bottom: 80px;
 }
 
+.rodape-conteudo h1{
+    font-size: 3em;
+    line-height: 1;
+    margin:auto;
+    font-family: 'Comfortaa', cursive;
+    color: #f3e9e9;
+    text-align: center;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-conteudo h1::after, .rodape-conteudo h1::before{
+        content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 50%;
+}
 
 .rodape-contato-form{
     display: grid;
@@ -417,6 +474,12 @@ img{
     grid-area: enviar;
     border-radius: 0px 20px 20px 0px;
 }
+
+.rodape-contato-form button:hover{
+    background: rgb(248, 225, 216);
+    transition: .2s;
+}
+
 .rodape-contato-form textarea{
     grid-area: textarea;
     border: 4px solid #f3e9e9;
@@ -436,18 +499,13 @@ img{
     }
 }
 
-.rodape-bg{
-    background:linear-gradient(to top, #2248C9 10%, #99229b);
-    min-height: 40vh; 
-    overflow: hidden;
+.rodape-conteudo{
+    padding-bottom: 40px;
 }
 
-.rodape-conteudo h1{
-    font-size: 3em;
-    line-height: 1;
-    margin:auto;
-    font-family: 'Comfortaa', cursive;
+.rodape-conteudo p{
+    display: flex;
+    justify-content: center;
     color: #f3e9e9;
-    text-align: center;
-    padding: 80px 0;
+    font-family: 'Comfortaa', cursive;
 }
