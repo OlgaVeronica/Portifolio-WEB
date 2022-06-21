@@ -155,7 +155,7 @@
             <h1>Quais são meus Hobbies?</h1>
         </div>
         <div class="hobbies-descricao">
-            <div class="hobbies-descricao-titulo ler">
+            <div class="hobbies-descricao-titulo right">
                 <h1>LER</h1>
             </div>
             <div class="hobbies-descricao-texto">
@@ -170,12 +170,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laboriosam placeat perspiciatis doloremque vero vitae, dolore voluptate voluptatem a iste delectus voluptatibus minus sunt consectetur fugit tempora alias molestiae fugiat.</p>
                 </div>
             </div>
-            <div class="hobbies-descricao-titulo jogar">
+            <div class="hobbies-descricao-titulo left">
                 <h1>JOGAR</h1>
             </div>
         </div>
         <div class="hobbies-descricao">
-            <div class="hobbies-descricao-titulo ler">
+            <div class="hobbies-descricao-titulo right">
                 <h1>DOGUINHO</h1>
             </div>
             <div class="hobbies-descricao-texto">
@@ -190,7 +190,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laboriosam placeat perspiciatis doloremque vero vitae, dolore voluptate voluptatem a iste delectus voluptatibus minus sunt consectetur fugit tempora alias molestiae fugiat.</p>
                 </div>
             </div>
-            <div class="hobbies-descricao-titulo jogar">
+            <div class="hobbies-descricao-titulo left">
                 <h1>VIOLÃO</h1>
             </div>
         </div>
@@ -200,10 +200,10 @@
         <div class="rodape-conteudo">
             <h1 >Vamos trabalhar juntos?</h1>
             <div class="rodape-contato">
-                <form class="rodape-contato-form">
-                    <input type="email" placeholder="Seu e-mail">
-                    <textarea rows="9" placeholder="Sua mensagem..."></textarea>
-                    <button type="submit">enviar</button>
+                <form class="rodape-contato-form" name="trabalheEnv" onsubmit="confirmarEnvio();">
+                    <input type="email"name="emailEnv" placeholder="Seu e-mail">
+                    <textarea name="textoEnv" rows="9" placeholder="Sua mensagem..."></textarea>
+                    <button name="botaoEnv"type="submit">enviar</button>
                 </form>
             </div>
             <p>Todos os direitos reservados - Olga Veronica</p>

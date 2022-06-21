@@ -388,12 +388,12 @@ img{
 
 .hobbies-descricao{
     margin-top: 80px;    
-
     min-height: 50vh;
     background-size: cover;
     display: flex;
     align-items: center;
 }
+
 
 .hobbies-descricao:nth-child(2){
     background-image: url(../image/library.jpg);
@@ -423,12 +423,13 @@ img{
     color: white;
 }
 
-.ler{
-    background:linear-gradient(to right, #2248C9, #99229bdf 70%, transparent);     
+.right{
+    background:linear-gradient(to right, #2248C9, #99229bdf 70%, transparent);
+    
 }
 
 
-.jogar{
+.left{
     background:linear-gradient(to left, #2248C9, #99229bdf 70%, transparent);     
 }
 
