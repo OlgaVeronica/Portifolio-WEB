@@ -366,40 +366,44 @@ img{
     color: #232323;
     font-family: 'Comfortaa', cursive;
 }
-.newsletter{
+.rodape-contato{
     /* padding: 60px calc((100% - 960px) / 2); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 80px;
 }
 
 
-.newsletter-form{
+.rodape-contato-form{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'input enviar'
+                         'textarea enviar';
     margin: auto;
-    flex: 2 1 260px;
     margin: 0 10px;
     align-self: center;
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1200px;
 }
 
-.newsletter-form input{
+.rodape-contato-form input{
+    grid-area: input;
     flex: 3 1 260px;
     font-size: 1.25em;
     color:#7c7c7c;
     font-style: italic;
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     border: 4px solid #f3e9e9;
-    background: transparent;
+    background: white;
+    color: #232323;
     padding: 15px 10px;
     margin: 0px;
-    border-radius: 0px;
+    border-radius: 20px 0px 0px 0px;
 }
 
-.newsletter-form button{
+.rodape-contato-form button{
     flex: 1 1 260px;
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 2.25em;
     font-weight: bold;
     text-transform: uppercase;
@@ -410,17 +414,32 @@ img{
     border: 0px;
     padding: 15px 10px;
     max-width: 1200px;
+    grid-area: enviar;
+    border-radius: 0px 20px 20px 0px;
+}
+.rodape-contato-form textarea{
+    grid-area: textarea;
+    border: 4px solid #f3e9e9;
+    resize: none;
+    border-radius: 0px 0px 0px 20px;
+    min-height: 200px;
+    background: white;
+    color: #232323;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    padding: 15px 10px;
 }
 
 @media (max-width: 600px){
-    .newsletter-form button{
+    .rodape-contato-form button{
         font-size: 1.5em;
     }
 }
 
 .rodape-bg{
     background:linear-gradient(to top, #2248C9 10%, #99229b);
-    height: 40vh; 
+    min-height: 40vh; 
+    overflow: hidden;
 }
 
 .rodape-conteudo h1{
