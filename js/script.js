@@ -8,3 +8,14 @@ function confirmarEnvio(){
     }
 }
 
+function trocaImagemEu(imagem){
+    imagem.src="../image/mallu.jpg";
+}
+
+function trocaImagemIFRO(imagem){
+    imagem.src="../image/ifro.png";
+}
+
+function aparecerInfo(){
+    alert("Alguns me chamam de Velma, não sei o porquê...")
+}

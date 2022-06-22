@@ -176,11 +176,7 @@ img{
     flex-wrap: wrap;
     align-items: flex-end;
     max-width: 450px;
-}
-
-.sobre-mim-img {
-
-
+    cursor: pointer;
 }
 
 .feitos-meu{
@@ -216,6 +212,7 @@ img{
 .feitos-meu-img{
     flex: 1 1 160px;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .ferramentas-container{
